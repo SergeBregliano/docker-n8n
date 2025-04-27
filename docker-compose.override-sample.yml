@@ -1,0 +1,13 @@
+x-shared: &shared
+  restart: 'no'
+
+services:
+  postgres:
+    restart: 'no'
+
+  redis:
+    restart: 'no'
+
+  n8n:
+    ports:
+      - 80:5678
