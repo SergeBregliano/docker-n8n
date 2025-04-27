@@ -1,6 +1,7 @@
 # n8n with PostgreSQL and Worker
 
 Starts n8n with PostgreSQL as database, and the Worker as a separate container.
+This docker compose stack come from [the officiel n8n Github repository](https://github.com/n8n-io/n8n-hosting/tree/main/docker-compose/withPostgresAndWorker).
 
 ## Configuration
 
@@ -27,5 +28,13 @@ To stop it execute:
 
 ```
 docker-compose stop
+```
+
+## Update
+
+To update the Docker stack from the Github repository, use make :
+
+```shell
+make update
 ```
 
